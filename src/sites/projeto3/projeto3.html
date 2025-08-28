@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝓐𝓤𝓣𝓞 𝓒𝓐𝓡</title>
+    <link rel="stylesheet" href="../../framework/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            padding-top: 70px; /* Para compensar a navbar fixa */
+        }
+
+        /* Navbar fixa */
+        nav.navbar {
+            background-color: #222;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #ff0000;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Banner */
+        .banner {
+            background: url("https://wallpapers.com/images/hd/black-car-4k-xzv10ftgkshqn37m.jpg") center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 8px #000;
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #fffb00;
+            text-shadow: 2px 2px 8px #ffffff;
+        }
+
+        /* Cards */
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card {
+            background-color: #111;
+            color: #fff;
+            border: 1px solid #444;
+        }
+
+        .btn-primary {
+            background-color: #ff0000;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #cc0000;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #111;
+            color: #ccc;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 14px;
+            border-top: 1px solid #444;
+        }
+
+        footer a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Texto Sobre */
+        section#sobre p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">𝘼𝙐𝙏𝙊 𝘾𝘼𝙍</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#modelos">Nossos modelos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fale">Fale conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre a Empresa</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Bem-vindo à 𝘼𝙐𝙏𝙊 𝘾𝘼𝙍!</h1>
+        <h2>Luxo, Desempenho e Exclusividade em cada detalhe.</h2>
+    </div>
+
+    <!-- Carrossel -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">𝐄𝐱𝐜𝐥𝐮𝐬𝐢𝐯𝐢𝐝𝐚𝐝𝐞 𝐪𝐮𝐞 𝐯𝐨𝐜𝐞 𝐦𝐞𝐫𝐞𝐜𝐞!</h2>
+            <div id="carouselEspecialidades" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://usagif.com/wp-content/uploads/gifs/race-car-5.gif" class="d-block w-100"
+                            alt="Especialidade 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://usagif.com/wp-content/uploads/2022/hqgif/drift-14-drifting-around-acegif.gif"
+                            class="d-block w-100" alt="Especialidade 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/originals/e6/47/15/e64715ebcb574a5d4d9e0b3ce593681d.gif"
+                            class="d-block w-100" alt="Especialidade 3" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEspecialidades"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEspecialidades"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modelos -->
+    <section id="modelos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">𝑵𝒐𝒔𝒔𝒐𝒔 𝑴𝒐𝒅𝒆𝒍𝒐𝒔:</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://retornar.com.br/wp-content/uploads/2023/12/shutterstock_2211043859-_-VELOZES-E-FURIOSOS-CARROS-.jpg"
+                            class="card-img-top" alt="Toyota Supra" />
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Supra Laranja</h5>
+                            <p class="card-text">O Toyota Supra laranja é um esportivo potente, com design agressivo e
+                                cor vibrante, muito desejado por quem busca estilo e alta performance.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Ver
+                                Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://retornar.com.br/wp-content/uploads/2023/12/shutterstock_1536127898-_-VELOZES-E-FURIOSOS-CARROS-.jpg"
+                            class="card-img-top" alt="Skyline" />
+                        <div class="card-body">
+                            <h5 class="card-title">Nissan Skyline Prata</h5>
+                            <p class="card-text">O Nissan Skyline prata é um carro esportivo potente, com visual moderno
+                                e elegante, muito apreciado por quem gosta de velocidade.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Ver
+                                Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://retornar.com.br/wp-content/uploads/2023/12/shutterstock_1410798290-_-VELOZES-E-FURIOSOS-CARROS-.jpg"
+                            class="card-img-top" alt="Charger" />
+                        <div class="card-body">
+                            <h5 class="card-title">Dodge Charger Preto</h5>
+                            <p class="card-text">O Dodge Charger preto é um sedã esportivo com visual agressivo, motor
+                                potente e estilo marcante. Une força, elegância e desempenho típico de um muscle car.
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Ver
+                                Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modais -->
+    <!-- Toyota -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Toyota Supra Laranja</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://gifdb.com/images/high/supra-mk4-orange-car-montage-963of6jj5m86snmj.gif"
+                        class="img-fluid mb-3" alt="Supra" />
+                    <p>O Toyota Supra laranja é um esportivo de alta performance, com motor 3.0L turbo, 340 cv e design
+                        vibrante. Custa a partir de R$ 1.150.000 no Brasil.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skyline -->
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nissan Skyline Prata</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://i.pinimg.com/originals/54/d7/38/54d738f2a8e8d61527f29d188c6b30b3.gif"
+                        class="img-fluid mb-3" alt="Skyline" />
+                    <p>O Nissan Skyline prata, ícone japonês, possui motor de até 330 cv. No Brasil, os preços vão de
+                        R$ 150 mil a R$ 2,9 milhões em versões raras.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charger -->
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dodge Charger Preto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://i.pinimg.com/originals/86/d4/da/86d4dafec8bf2bee6feff4162bf38c5b.gif"
+                        class="img-fluid mb-3" alt="Charger" />
+                    <p>O Dodge Charger preto possui versões de até 797 cv e visual intimidador. No Brasil, custa entre
+                        R$ 330 mil e R$ 700 mil, dependendo da versão.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">𝙎𝙤𝙗𝙧𝙚 𝙖 𝙀𝙢𝙥𝙧𝙚𝙨𝙖:</h2>
+            <div class="clearfix">
+                <img src="https://i.gifer.com/MSWu.gif" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Oficina" />
+                <p> AutoCar nasceu do sonho de dois apaixonados por carros: Grilo e Daniel. Amigos de longa data, eles
+                    sempre compartilharam a mesma paixão pelo universo automotivo e a vontade de criar um espaço onde
+                    tecnologia, confiança e atendimento de qualidade se encontrassem.</p>
+                <p>Em 2010, com muito esforço e dedicação, deram vida à AutoCar, começando com uma pequena oficina que
+                    logo conquistou a confiança dos clientes pela transparência no serviço e pelo cuidado com cada
+                    veículo. O compromisso com a excelência fez a empresa crescer, atraindo uma equipe especializada e
+                    investindo em ferramentas modernas para oferecer soluções completas da manutenção preventiva ao
+                    suporte técnico avançado.</p>
+                <p> Hoje, a AutoCar é muito mais que uma oficina: É um centro automotivo de referência, resultado da
+                    visão empreendedora de Grilo e Daniel, que continuam à frente do negócio, mantendo vivo o propósito
+                    inicial: Cuidar de cada carro como se fosse único, e de cada cliente como parte da família AutoCar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fale Conosco -->
+    <section id="fale" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">𝙁𝙖𝙡𝙚 𝘾𝙤𝙣𝙤𝙨𝙘𝙤:</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome" />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="seu@email.com" />
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva aqui..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AutoCar. Todos os direitos reservados.</p>
+            <p>Este site e todo o seu conteúdo são propriedade exclusiva da AutoCar, sendo proibida a reprodução,
+                distribuição ou uso não autorizado sem consentimento prévio por escrito.</p>
+            <p>
+                <a href="#modelos">Modelos</a> |
+                <a href="#fale">Fale Conosco</a> |
+                <a href="#sobre">Sobre a Empresa</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../../framework/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
