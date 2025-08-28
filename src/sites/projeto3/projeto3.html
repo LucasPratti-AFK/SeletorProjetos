@@ -19,10 +19,16 @@
             font-family: Arial, sans-serif;
             background-color: #000;
             color: #fff;
+            padding-top: 70px; /* Para compensar a navbar fixa */
         }
 
-        nav {
+        /* Navbar fixa */
+        nav.navbar {
             background-color: #222;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
 
         nav a {
@@ -33,16 +39,27 @@
             color: #ffd700;
         }
 
+        /* Banner */
         .banner {
             background: url("https://wallpapers.com/images/hd/black-car-4k-xzv10ftgkshqn37m.jpg") center/cover no-repeat;
             height: 500px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             color: #fff;
-            text-shadow: 2px 2px 8px #fff;
+            text-shadow: 2px 2px 8px #000;
+            text-align: center;
         }
 
+        .banner h2 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #fffb00;
+            text-shadow: 2px 2px 8px #ffffff;
+        }
+
+        /* Cards */
         .card img {
             height: 200px;
             object-fit: cover;
@@ -63,6 +80,7 @@
             background-color: #cc0000;
         }
 
+        /* Rodapé */
         footer {
             background-color: #111;
             color: #ccc;
@@ -81,6 +99,7 @@
             text-decoration: underline;
         }
 
+        /* Texto Sobre */
         section#sobre p {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 17px;
@@ -109,7 +128,7 @@
     <!-- Banner -->
     <div class="banner">
         <h1>Bem-vindo à 𝘼𝙐𝙏𝙊 𝘾𝘼𝙍!</h1>
-    
+        <h2>Luxo, Desempenho e Exclusividade em cada detalhe.</h2>
     </div>
 
     <!-- Carrossel -->
@@ -210,7 +229,7 @@
                     <img src="https://gifdb.com/images/high/supra-mk4-orange-car-montage-963of6jj5m86snmj.gif"
                         class="img-fluid mb-3" alt="Supra" />
                     <p>O Toyota Supra laranja é um esportivo de alta performance, com motor 3.0L turbo, 340 cv e design
-                        vibrante. Custa a partir de R$ 1.150.000 no Brasil.</p>
+                        vibrante. Custa a partir de R$ 1.150.000 no Brasil.</p>
                 </div>
             </div>
         </div>
@@ -228,7 +247,7 @@
                     <img src="https://i.pinimg.com/originals/54/d7/38/54d738f2a8e8d61527f29d188c6b30b3.gif"
                         class="img-fluid mb-3" alt="Skyline" />
                     <p>O Nissan Skyline prata, ícone japonês, possui motor de até 330 cv. No Brasil, os preços vão de
-                        R$ 150 mil a R$ 2,9 milhões em versões raras.</p>
+                        R$ 150 mil a R$ 2,9 milhões em versões raras.</p>
                 </div>
             </div>
         </div>
@@ -246,7 +265,7 @@
                     <img src="https://i.pinimg.com/originals/86/d4/da/86d4dafec8bf2bee6feff4162bf38c5b.gif"
                         class="img-fluid mb-3" alt="Charger" />
                     <p>O Dodge Charger preto possui versões de até 797 cv e visual intimidador. No Brasil, custa entre
-                        R$ 330 mil e R$ 700 mil, dependendo da versão.</p>
+                        R$ 330 mil e R$ 700 mil, dependendo da versão.</p>
                 </div>
             </div>
         </div>
